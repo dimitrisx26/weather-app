@@ -1,27 +1,22 @@
-# WeatherApp
+# Weather App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+This is a weather application built with Angular, TypeScript, Bootstrap and npm.
 
-## Development server
+## Project Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Install the dependencies by running `npm install`.
+2. Start the development server by running `npm start`.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Fetches weather data from OpenWeatherMap API.
+- Caches the data for 15 minutes to reduce unnecessary API calls.
 
-## Build
+## Code Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- The main application logic is in the `src/app` directory.
+- The `WeatherService` in [src/app/weather.service.ts](src/app/weather.service.ts) is responsible for fetching and caching weather data.
 
-## Running unit tests
+## Building the Project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
