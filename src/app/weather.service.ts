@@ -12,6 +12,7 @@ export class WeatherService {
   constructor(private http: HttpClient) {}
 
   getWeather(city: string) {
+    city = city.toLowerCase();
     return timer(0, 15 * 60 * 1000).pipe(
       switchMap(() => {
         const cachedDataString = localStorage.getItem(city);
